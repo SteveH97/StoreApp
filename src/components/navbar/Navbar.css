@@ -1,0 +1,150 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    background-color: var(--background-color);
+    z-index: 3;
+}
+
+.navbar h1{
+    padding: 0 10rem 0 1rem;
+    left: 20%;
+    font-size: 50px;
+}
+
+.navbar h1 a{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.navbar__search{
+    width: 40%;
+    display: flex;
+}
+
+.navbar input{
+    padding: 0 2rem 0 2rem;
+    border-style: none;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.navbar button{
+    border-style: none;
+    background-color: var(--complementary-color);
+    border-radius: 0 5px 5px 0;
+}
+
+.navbar ul{
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    padding: 0 1rem 0 1rem;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0 1rem 0 1rem;
+}
+
+.navbar li a{
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px){
+    .navbar ul{
+        display: none;
+        color: beige;
+    }
+
+    .navbar h1{
+        padding: 1rem 7rem 1rem 4rem;
+        font-size: 45px;
+    }
+
+    .navbar__search{
+        width: 150%;
+    }
+
+    .navbar__menu{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .navbar li{
+        display: none;
+        color: beige;
+    }
+
+    .navbar h1{
+        padding: 1rem;
+        font-size: 40px;
+    }
+
+    .navbar__search{
+        width: 150%;
+    }
+
+    .navbar__menu svg{
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+.navbar__menu{
+    position: relative;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__menu svg{
+    width: 35px;
+    height: 35px;
+}
+
+.navbar__menu div{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    padding: 1rem;
+
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 900px){
+    .navbar__menu div{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .navbar__menu{
+        display: none;
+    }
+}

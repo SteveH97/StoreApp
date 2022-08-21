@@ -1,0 +1,44 @@
+.checkoutCard{
+    width: 50%;
+    height: 8.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-style: solid;
+    margin: .5rem;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.checkoutCard__img{
+    width: 30%;
+    height: 100%;
+}
+
+.checkoutCard__info{
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkoutCard__info ul li{
+    list-style: none;
+}
+
+.checkoutCard__total-item{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+}
+
+.checkoutCard__total-item button{
+    margin-top: 1rem;
+    border-color: var(--accent-color);
+    background-color: var(--complementary-color);
+    color: white;
+    border-radius: 5px;
+    
+}
+

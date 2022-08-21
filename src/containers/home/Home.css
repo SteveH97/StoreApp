@@ -1,0 +1,23 @@
+.home{
+    position: absolute;
+    display: flex;
+    
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+
+    top: 10.5%;
+}
+
+.home__filter{
+    width: 10%;
+}
+
+.home__products{
+    width: 90%;
+    padding: .5rem 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
